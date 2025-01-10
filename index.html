@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pandar Village</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Pandar Village</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#registration" class="nav-link">Registration</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Pandar Village</h1>
+                <p>A Beautiful Village in Jasra, Prayagraj</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Our Village</h2>
+            <div class="about-content">
+                <p>Pandar is a picturesque village located in Jasra, Prayagraj. Our village is known for its rich cultural heritage, 
+                   agricultural prosperity, and warm community spirit.</p>
+            </div>
+        </section>
+
+        <section id="registration" class="registration-section">
+            <h2>Villager Registration</h2>
+            <div class="registration-form">
+                <form action="register.php" method="POST" id="villagerForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="father_name">Father's Name*</label>
+                            <input type="text" id="father_name" name="father_name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mother_name">Mother's Name*</label>
+                            <input type="text" id="mother_name" name="mother_name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth*</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age*</label>
+                            <input type="number" id="age" name="age" min="0" max="120" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender*</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number*</label>
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address*</label>
+                            <textarea id="address" name="address" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City*</label>
+                            <input type="text" id="city" name="city" value="Jasra" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="district">District*</label>
+                            <input type="text" id="district" name="district" value="Prayagraj" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">Pincode*</label>
+                            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="education">Education*</label>
+                            <select id="education" name="education" required>
+                                <option value="">Select Education Level</option>
+                                <option value="primary">Primary School</option>
+                                <option value="secondary">Secondary School</option>
+                                <option value="higher_secondary">Higher Secondary</option>
+                                <option value="graduate">Graduate</option>
+                                <option value="post_graduate">Post Graduate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Village Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Gallery images will be added dynamically via JavaScript -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info-container">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-content">
+                                <h3>Our Location</h3>
+                                <p>Pandar Village, Jasra</p>
+                                <p>Prayagraj, Uttar Pradesh</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="info-content">
+                                <h3>Phone Number</h3>
+                                <p><a href="tel:+918299552791">+91 8299552791</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info-content">
+                                <h3>Email Address</h3>
+                                <p><a href="mailto:saurabhmar05@gmail.com">saurabhmar05@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form action="submit.php" method="POST" class="contact-form">
+                        <div class="form-header">
+                            <h3>Send us a Message</h3>
+                            <p>Feel free to reach out to us with any questions or concerns.</p>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <span class="input-focus-border"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <span class="input-focus-border"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" name="phone" placeholder="Your Phone (optional)" pattern="[0-9]{10}">
+                            <span class="input-focus-border"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                            <span class="input-focus-border"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Pandar Village</h3>
+                <p>Discover the beauty and culture of our traditional village in Jasra, Prayagraj.</p>
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +91 8299552791</span>
+                    <span><i class="fas fa-envelope"></i> saurabhmar05@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#registration">Registration</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Connect With Us</h3>
+                <div class="socials">
+                    <a href="https://www.instagram.com/lion7720king?igsh=MXBubHFsdmZobXBlZA==" target="_blank" class="social-btn instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Saurabhsharma8299" target="_blank" class="social-btn github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="http://t.me/Hackillers" target="_blank" class="social-btn telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saurabh-sharma-487835301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024-25 Pandar Village. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
